@@ -39,21 +39,43 @@
             margin-top: 20px;
         }
 
-        .bottom-bar {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
+        .features {
+            margin-bottom: 30px;
         }
 
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
+        .features h2 {
+            color: #333;
         }
 
-        .social-links img {
-            width: 30px;
-            height: 30px;
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .feature-image {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+        }
+
+        .testimonial h2 {
+            color: #333;
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+            border-left: 2px solid #333;
+            padding-left: 15px;
         }
 
         .contact-info p {
@@ -62,27 +84,44 @@
 
         /* Add more styles as needed */
     </style>
-    <title>Expense Tracker App</title>
+    <title>Awesome App</title>
 </head>
 <body>
     <header class="top-bar">
-        <h1>EXpense Tracker</h1>
+        <h1>Awesome App</h1>
     </header>
 
     <main class="content">
         <section class="app-info">
             <h2>About the App</h2>
-            <p>"Welcome to our cutting-edge Expense App Tracker, the ultimate tool to supercharge your financial management! Say goodbye to the hassles of tracking expenses manually and embrace the future of effortless finance control",
-</p>
-            <img src="" alt="App Screenshot">
+            <p>Welcome to Awesome App, a revolutionary application that simplifies your life in incredible ways. Whether you're...</p>
+            <img src="app_screenshot.png" alt="App Screenshot">
         </section>
 
         <section class="features">
             <h2>Features</h2>
             <ul>
-                <li>Instantly organize your tasks and to-do lists</li>
-                <li>Effortlessly track your fitness progress</li>
-                <li>Connect with friends and share memories</li>
+                <li>
+                    <img src="feature1.png" alt="Feature 1" class="feature-image">
+                    <div>
+                        <h3>Task Management</h3>
+                        <p>Easily organize and prioritize your tasks with our intuitive task management feature.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="feature2.png" alt="Feature 2" class="feature-image">
+                    <div>
+                        <h3>Fitness Tracking</h3>
+                        <p>Track your fitness progress and set goals to stay motivated on your health journey.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="feature3.png" alt="Feature 3" class="feature-image">
+                    <div>
+                        <h3>Social Connections</h3>
+                        <p>Connect with friends and family, share moments, and stay connected no matter where you are.</p>
+                    </div>
+                </li>
             </ul>
         </section>
 
