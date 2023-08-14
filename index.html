@@ -1,265 +1,107 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>GROUP CONNECT</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <style>
-    .menu-index {
-      color: rgb(255, 255, 255) !important;
-      opacity: 1 !important;
-      font-weight: 700 !important;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .app-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .app-info h2 {
+            color: #333;
+        }
+
+        .app-info p {
+            font-size: 18px;
+        }
+
+        .app-info img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .bottom-bar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px;
+        }
+
+        /* Add more styles as needed */
+    </style>
+    <title>Expense Tracker App</title>
 </head>
-
 <body>
-  <div class="menu-container"></div>
-  <div class="content-container">
-    <div class="banner" style="background: url('img/image 1 - Copy.jpg') no-repeat center; background-size: cover; height: 200px;"></div>
-    <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">YO CLASS</h2>
-            <p class="text">
-              This project is about an e-learning application that initiates the effective communication between fellow students and lecturers via chatrooms and video conferencing tools
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro-->
-        <h1>GROUP 14 </h1>
-            <p class="text text-large">
-              <a target="_blank" href="javascript:void(0)">Member 1</a>, Kibuuka Micheal Edwin<br>
-              <a target="_blank" href="javascript:void(0)">Member 2 </a>, Barasa Elijah Maiga<br>
-              <a target="_blank" href="javascript:void(0)">Member 3</a>,Sahra Ahmed<br>
-              <a target="_blank" href="javascript:void(0)">Member 4</a>,Sekyanzi Joel<br>
-              <a target="_blank" href="javascript:void(0)">Member 5</a>, Mugisha Richard<br>
-             
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text add-top-margin">
-              Group connect app is an E-learning system developed to override the problems prevailing in the practicing manual system. No formal knowledge is needed for the user to use this system.
-            </p>
-          </div>
-        </div>
-        <!--End Intro-->
-        <!-------------------------------------------------------------------------------------------->
-       
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-            <p class="text badge-text"></p>
-          </div>
-          
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              The application helps academically weak students get a chance to have extra office time with lecturers inorder to shape what they are lacking
-            </p>
-            
-            <p class="text">
-              	This app also includes resources such as reading materials and reference books for those that cant download
-            </p>
-          </div>
-       
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>Some of the designs of the app</h2>
-            <hr>
-            <p class="text">
-              E learning provides students to access the best education and study well.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/image 3.jpg">
-            
-          </div>
-          <div class="flex-item flex-column">
-            <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
-              <img src="img/image 1 - Copy.jpg">
-            </a>
-            
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-             Very few students have access to both study materals and lecturers outside the classroom to ask for assistance
+    <header class="top-bar">
+        <h1>EXpense Tracker</h1>
+    </header>
 
-Discussion time frames
-One of the best ways to understand a concept is by discussing it and unfortunately overlooked within a classroom
+    <main class="content">
+        <section class="app-info">
+            <h2>About the App</h2>
+            <p>"Welcome to our cutting-edge Expense App Tracker, the ultimate tool to supercharge your financial management! Say goodbye to the hassles of tracking expenses manually and embrace the future of effortless finance control",
+</p>
+            <img src="" alt="App Screenshot">
+        </section>
 
- describing the problem/challenge you are trying to solve/address i.e., what is user problem/challenge are you trying to solve/address and why is it important.
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Instantly organize your tasks and to-do lists</li>
+                <li>Effortlessly track your fitness progress</li>
+                <li>Connect with friends and share memories</li>
+            </ul>
+        </section>
 
-            </p>
-          </div>
+        <section class="testimonial">
+            <h2>What Our Users Say</h2>
+            <blockquote>"Awesome App has completely transformed the way I manage my daily tasks. It's user-friendly and has made my life so much more organized."</blockquote>
+            <p>- Jane Doe, Happy User</p>
+        </section>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
         </div>
-        <!--End Text with Images and Image buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-           
-            <hr>
-            <p class="text">
-              <img class="image image-wrap-text max-width-400" src="img/image 7.jpg">
-              
-            </p>
-          </div>
+        <div class="contact-info">
+            <p>Email: contact@awesomeapp.com</p>
         </div>
-        <!--End Text around Image-->
-        <!-------------------------------------------------------------------------------------------->
-      </div>
-    </div>
-             
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Centered Image and Table-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-         
-            <p class="text text-center graph-title">
-             This is the video conferencing page.
-            </p>
-            <img class="image center max-width-400 add-top-margin-small" src="img/image 5.jpg">
-            <p class="text">
-              In the video conferencing, meetings can be held and students can discuss from wherever they are with no incovenience.
-            </p>
-          </div>
-        </div>
-        <!--End Text with Centered Image and Table-->
-        <!-------------------------------------------------------------------------------------------->
-        
-      </div>
-    </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Videos-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            
-            <hr>
-            <p class="text">
-              	Yo class is there to promote effective communication between fellow students and lecturers.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/image 2 - Copy.jpg">
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-             This app  improvises on revision methods such as discussions and study materials.
-            </p>
-          </div>
-        </div>
-        
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              This app contains reading material, video conferencing and chatting.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-2 flex-column">
-            <p class="text">
-              
-            </p>
-          </div>
-         
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <!--End Text with Images and Videos-->
-        <!-------------------------------------------------------------------------------------------->
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <!--END Text with Iframe-->
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <a href="javascript:void(0)" class="flex-column"><img src="img/image 8.jpg">
-            
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/image 4.jpg">
-        
-          </a>
-          
-          
-          </a>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        
-        <!-------------------------------------------------------------------------------------------->
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>Conclusion</h2>
-            <p class="text add-bottom-margin-large">
-              The e learning app improves students' learning capapbility in campus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </footer>
 </body>
-
 </html>
