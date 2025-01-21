@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f1c40f;
+}
+
+/* Main Section */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f1c40f;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f1c40f;
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #222;
+  color: #888;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive Styling */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-links, .social-links, .footer-contact {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* General Styling for Product Section */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Styling for each product box */
+.product-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Image styling */
+.product-box img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Product details */
+.product-details {
+  padding: 10px;
+}
+
+/* Price styling */
+.product-price {
+  font-size: 18px;
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+/* Add to Cart button styling */
+.add-to-cart {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Add to Cart button hover effect */
+.add-to-cart:hover {
+  background-color: #2980b9;
+}
+
+/* Logo styling */
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+/* Set maximum size for images in the checkout page */
+#product-image {
+  max-width: 300px; /* You can adjust this based on your design */
+  max-height: 300px; /* You can adjust this based on your design */
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
